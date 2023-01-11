@@ -9,10 +9,27 @@ const website = 'https://memegen-link-examples-upleveled.netlify.app/'
  // - assign this array of strings to a new variable called imgSrcs / links / imageUrls
 
 
+ // **This is a test
+const testtext = `Saturn is the sixth planet from the Sun and the second-largest in the Solar System, after Jupiter. It is a gas giant with an average radius about nine times that of Earth. Although it has only one-eighth the average density of Earth, with its larger volume Saturn is just over 95 times more massive. Saturn is named after the Roman god of agriculture; its astronomical symbol represents the god's sickle.`;
+console.log(testtext)
+
+console.log(
+    'text matches for Saturn + 2 words:',
+    testtext.match(/Saturn \w+ \w+/g),
+  );
+
+  // **end test 
+
+
+
 
 //Save this HTML into a variable called htmlContent (string)
 // !! Dummy-Version
-const htmlContent = [`img src="https://api.memegen.link/images/bad/your_meme_is_bad/and_you_should_feel_bad.jpg?width=300`, `img src="https://api.memegen.link/images/rollsafe/can't_get_fired/if_you_don't_have_a_job.jpg?width=300"`, `img src="https://api.memegen.link/images/xy/all_the_things!!!.jpg?width=300"`]
+//const htmlContent = `img src="https://api.memegen.link/images/bad/your_meme_is_bad/and_you_should_feel_bad.jpg?width=300`, `img src="https://api.memegen.link/images/rollsafe/can't_get_fired/if_you_don't_have_a_job.jpg?width=300"`, `img src="https://api.memegen.link/images/xy/all_the_things!!!.jpg?width=300"`]
+const htmlContent = 'img hello bye img sophie img';
+let regExpG = /img \w+ /g;
+const testhtmlContent = htmlContent.match(regExpG)
+console.log(testhtmlContent)
 
 //console.log(htmlContent)
 
