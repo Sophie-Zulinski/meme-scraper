@@ -24,9 +24,19 @@ while (match = rgx.exec(contentHtml)) {
 
 //  Filter the array to create a new array of only 10 elements 
 const onlyFirstTenPictures = imgSrcs.slice(0,10)
-console.log(onlyFirstTenPictures)
+//console.log(onlyFirstTenPictures)
 
-// ?? save the jpeg data in folders (e.g. data of first image into 01.jpeg-folder etc.), maybe with the command touch??
+
+
+// Loop through each URL in the image urls and Request image data (jpg data)
+
+// Map over the array and within the function slice each element of the array (the numbers always stay the same as it is always "https://api.memegen.link/images/" =32 characters and '?width=300' = -10 characters from the end)
+
+const jpegFiles = onlyFirstTenPictures.map((todo) => {
+  return todo.slice(32,-10);
+});
+console.log(jpegFiles)
+
 
 
 
