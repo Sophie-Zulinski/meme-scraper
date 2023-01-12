@@ -28,6 +28,12 @@ const onlyFirstTenPictures = imgSrcs.slice(0,10)
 
 
 
+
+
+
+
+
+// !!!! Wrong way, because now only .jpegs but great function :)
 // Loop through each URL in the image urls and Request image data (jpg data)
 
 // Map over the array and within the function slice each element of the array (the numbers always stay the same as it is always "https://api.memegen.link/images/" =32 characters and '?width=300' = -10 characters from the end)
@@ -35,9 +41,7 @@ const onlyFirstTenPictures = imgSrcs.slice(0,10)
 const jpegFiles = onlyFirstTenPictures.map((todo) => {
   return todo.slice(32,-10);
 });
-console.log(jpegFiles)
+//console.log(jpegFiles) 
 
 
-
-
-
+fs.rmSync(memes.js, { recursive: true, force: true });
