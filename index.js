@@ -29,6 +29,8 @@ const onlyFirstTenPictures = imgSrcs.slice(0,10)
 
 console.log(onlyFirstTenPictures)
 
+// Download the pictures and save them into a jpeg-file in the meme-folder, used this forum https://scrapingant.com/blog/download-image-javascript
+
 function downloadImage(url, filepath) {
     return new Promise((resolve, reject) => {
         get(url, (res) => {
