@@ -53,11 +53,6 @@
     "@typescript-eslint/utils": "5.47.1"
   },
   "dependencies": {
-    "cheerio": "^1.0.0-rc.12",
-    "image-data-uri": "^2.0.1",
-    "node-fetch": "^3.3.0",
-    "node-html-crawler": "^1.2.3",
-    "request": "^2.88.2",
-    "split-skip": "^0.0.5"
+    "node-fetch": "^3.3.0"
   }
 }
