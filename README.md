@@ -8,4 +8,4 @@
 
 ### 3. Sliced the array to only 10 elements (URLs)
 
-### 4. Downloaded the images from the URLs and put them into image folders (did it for each image seperately, I know this was not asked in the project, but didn't find another way )
+### 4. Downloaded the images from the URLs and put them into image folders 
